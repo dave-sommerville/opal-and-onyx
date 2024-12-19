@@ -17,10 +17,6 @@ const favouriteIcon = selectAll('.fa-heart');
 const bgDarken = select('.out-of-focus');
 
 
-/*-------------------------------*/
-/*---  Product - Hearts --*/
-/*-------------------------------*/
-
 favouriteIcon.forEach(icon => {
   listen('click', icon, () => {
     if (icon.classList.contains('liked')) {
@@ -73,9 +69,6 @@ listen("submit", contactForm, (e) => {
   } 
 });
 
-/*-------------------------------*/
-/*----  sign-in - Visibility ----*/
-/*-------------------------------*/
 
 function signInVisibility() {
   if (signIn.classList.contains('hidden')){
