@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Samuel Reutcky">
+    <meta name="description" content="My Web Project">
+    <meta name="keywords" content="html, css, seo, web devlopment">
+    <title>Opal & Onyx</title>
+    <link rel="icon" href="./src/img/logo.png" type="image/x-icon">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
+    <link rel="stylesheet" href="./src/css/detail.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="./src/js/detail.js" defer></script>
+  </head>
+	<body>
+    <div class="out-of-focus hidden"></div>
+    <div class="sign-in-modal hidden">
+      <h4 class="modal-title">Create an Account</h4>
+      <div class="inputs">
+        <input class="username" type="text" placeholder="Username">
+        <input class="email" type="text" placeholder="Email Address">
+        <input class="password" type="password" placeholder="Password">
+      </div>
+      <button class="sign-up">Sign Up</button>
+      <div class="sign-in">
+        <p class="already-have">Already have an account?</p>
+        <p class="log-in">Log in instead</p>
+      </div>
+    </div>
+		<header>
+			<div class="container flex flex-between">
+				<a href="index.html"><img class="logo" src="./src/img/logo.png" alt="Opal & Onyx"></a>
+				<nav>
+					<ul>
+						<li><a class="links" href="index.html">Home</a></li>
+						<li><a class="links" href="detail.html">Shop</a></li>
+						<li><a class="links" href="#contact-us">Contact us</a></li>
+						<li>
+								<i class="shop fa-solid fa-bag-shopping"></i>
+						</li>
+						<li>
+								<i class="user fa-solid fa-circle-user"></i>
+						</li>
+						<li>
+							<i class="bars fa-solid fa-bars"></i>
+						</li>
+					</ul>
+			</div>
+		</header>
+		<main class="container">
+      <section class="feature-product">
+        <div class="product-image">
+          <img src="./src/img/the_one.jpg" alt="Sparking Opal Ring">
+        </div>  
+        <div class="product-details">
+          <h2>The One Ring to Rule them All</h2>
+          <p class="info">
+            Forged in the fires of Mount Doom, this 24K gold masterpiece bears an 
+            elegant, flame-revealed Elvish inscription. A symbol of ultimate power 
+            and mystery, it’s the perfect addition to any legendary collection.
+          </p>
+          <p>Warning:May cause obsession and unexpected adventures.</p>
+          <div class="rating">
+            <p class="fake-num">4.0</p>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p class="fake-link">71 Ratings</p>
+          </div>
+          <h3>$9,999.99</h3>
+          <div class="feature-buttons">
+            <button class="buy-now">Buy now</button>
+            <button class="add-to-bag">Add to Bag</button>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <h6>Similar Products</h6>
+        <section class="product-wrapper">
+          <div class="product">
+            <img alt="product-1" src="./src/img/womens-ring.png">
+            <div class="product-info">
+              <h4 class="product-name">Womens Ring</h4>
+              <p class="price">$1699.99</p>  
+            </div>
+            <div class="buttons">
+              <button class="add-to"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="favourite"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product">
+            <img alt="product-2" src="./src/img/ring-with-pearl.png">
+            <div class="product-info">
+              <h4 class="product-name">Pearl Ring</h4>
+              <p class="price">$1299.99</p>
+            </div>
+            <div class="buttons">
+              <button class="add-to"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="favourite"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product">
+            <img alt="product-3" src="./src/img/wonems-engagment-ring.png">
+            <div class="product-info">
+              <h4 class="product-name">2 Carat Engagement Ring</h4>
+              <p class="price">$1,789.95</p>
+            </div>
+            <div class="buttons">
+              <button class="add-to"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="favourite"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product">
+            <img alt="product-4" src="./src/img/matching-mens-wedding-bands.png">
+            <div class="product-info">
+              <h4 class="product-name">Matching Wedding Bands</h4>
+              <p class="price">$1989.99</p>
+            </div>
+            <div class="buttons">
+              <button class="add-to"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="favourite"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+        </section>
+      </div>
+		</main>
+    <footer>
+      <div class="flex flex-column gap-20 container">
+        <div class="container footer-sections flex flex-between">
+          <div class="shop-footer flex flex-column">
+            <h5>SHOP</h5>
+            <p>Charms</p>
+            <p>Bracelets</p>
+            <p>Necklaces</p>
+            <p>Rings</p>
+            <p>All</p>
+          </div>
+          <div class="resources flex flex-column">
+            <h5>RESOURCES</h5>
+            <p>Check Order Status</p>
+            <p>Last Order Dates</p>
+            <p>Shipping</p>
+            <p>Returns</p>
+            <p>FAQ</p>
+          </div>
+          <div class="services flex flex-column">
+            <h5>SERVICES</h5>
+            <p>Store Locator</p>
+            <p>Gift Cards</p>
+            <p>Afterpay</p>
+            <p>Student Discount</p>
+            <p>Refer a Friend</p>
+          </div>
+          <div class="about-us flex flex-column">
+            <h5>ABOUT US</h5>
+            <p>Our Story</p>
+            <p>Investor Relations</p>
+            <p>Sustainability</p>
+            <p>Craftsmanship</p>
+            <p>Careers</p>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="flex flex-between">
+          <p>&copy; 2023 Opal & Onyx</p>
+          <div class="flex gap-20 legal">
+            <p>Privacy Policy</p>
+            <p>Terms of Use</p>
+            <p>Accessibility</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+	</body>
