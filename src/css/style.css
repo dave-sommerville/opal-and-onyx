@@ -2,12 +2,6 @@
 
 @import url(./utils.css);
 
-.container {
-  width: min(100% - 32px, 1200px);
-  margin-inline: auto;
-}
-
-
 body {
   color: var(--app-text-color);
 	position: relative;
@@ -180,7 +174,7 @@ h1 {
 }
 
 .hero-button:hover {
-  background-color: var(--app-gold-hover);
+  filter: brightness(0.8);
 }
 
 /*-------------------------------*/
@@ -205,12 +199,10 @@ h1 {
   z-index: 1000;
 }
 
-button i .fa-comment:hover {
-  scale: 1;
-}
+
 
 .chat:hover {
-  background-color: var(--app-gold-hover);
+  filter: brightness(0.8);
 }
 
 @media screen and (max-width: 480px) {
@@ -400,11 +392,11 @@ input.password {background: #272525 url(../img/password-icon.png) no-repeat 5px 
   border: none;
   color: #fff;
   cursor: pointer;
-  transition: background-color 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .black-friday-button:hover {
-  background-color: var(--app-gold-hover);
+  filter: brightness(0.8);
 }
 
 
@@ -428,6 +420,7 @@ a:has(+ .product){
 
 a .product:first-of-type {
   width: 100%;
+  border: thin groove #aa8c2c;
 }
 
 .product {
@@ -436,7 +429,7 @@ a .product:first-of-type {
   padding-top: 20px;
   background: linear-gradient(45deg, rgba(61,61,61,1) 0%, rgba(23,73,73,1) 100%); 
   backdrop-filter: saturate(180%) blur(50px);
-  border: thin groove #aa8c2c;
+  border: none;
   border-radius: var(--app-border-rad);
   display: grid;
   object-fit: cover;
@@ -446,9 +439,9 @@ a .product:first-of-type {
   transition: all 0.25s ease-in-out;
 }
 
+
 .product:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 8px 16px rgb(200 200 200 / 0.15);
+  filter: brightness(1.2);
 }
 
 .product > img {
@@ -500,7 +493,7 @@ button > i {
 }
 
 button i:hover {
-  transform: scale(1.1);
+  transform: scale(1.075);
 }
 
 @media screen and (max-width: 768px) {
@@ -547,17 +540,10 @@ button i:hover {
   border-radius: var(--app-border-rad);
   padding: 24px; 
   width: 380px;
-  box-shadow: 0 4px 6px rgb(200 200 200 / 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .tier:nth-of-type(3){
   border: thin groove #aa8c2c;
-}
-
-.tier:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgb(200 200 200 / 0.2);
 }
 
 .tier-name {
@@ -593,11 +579,11 @@ button i:hover {
   border-radius: var(--app-border-rad);
   padding: 12px 24px; 
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.25s ease-in-out;
 }
 
 .get-started:hover {
-  background: var(--app-gold-hover);
+  filter: brightness(0.8);
 }
 
 
@@ -672,11 +658,13 @@ button i:hover {
 	padding: 10px 20px;
 	cursor: pointer;
 	border-radius: var(--app-border-rad);
+  transition: all 0.25s ease-in-out;
 }
 
 .send-btn:hover {
-	background-color: var(--app-gold-hover);
+	filter: brightness(0.8);
 }
+
 .error {
 	font-family: inherit;
 	font-size: inherit;
@@ -722,9 +710,7 @@ button i:hover {
 }
 
 .icon:hover {
-  transform: translateY(-10px);
-	transition: all 0.25s ease-in-out;
-
+  transform: scale(1.075);
 }
 
 .fa-facebook {

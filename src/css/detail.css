@@ -117,15 +117,6 @@ header {
 	}
 }
 
-.container {
-	width: min(100% - 30px, 1200px);
-	margin-inline: auto;
-}
-
-.flex {
-	display: flex;
-}
-
 /*-------------------------------*/
 /*------    Log in Modal   ------*/
 /*-------------------------------*/
@@ -275,7 +266,7 @@ input.password {background: #272525 url(../img/password-icon.png) no-repeat 5px 
   display: block;
   object-fit: cover;
   border-radius: 8px;
-  transition: transform 0.3s ease;
+  transition: transform 0.25s ease;
 }
 
 .product-image img:hover {
@@ -325,7 +316,7 @@ button {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.25s ease;
   margin-bottom: 10px;
 }
 
