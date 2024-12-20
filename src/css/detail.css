@@ -316,7 +316,7 @@ button {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.25s ease;
+  transition: all 0.25s ease;
   margin-bottom: 10px;
 }
 
@@ -328,8 +328,8 @@ button {
   background-color: #34495e;
 }
 
-.add-to-bag:hover {
-  background-color: #2c3e50;
+button:hover {
+  filter: brightness(0.8);
 }
 
 /*-----------------------------------*/
@@ -390,7 +390,7 @@ button {
   padding-top: 10px;
   background: linear-gradient(45deg, rgba(61,61,61,1) 0%, rgba(23,73,73,1) 100%); 
   backdrop-filter: saturate(180%) blur(50px);
-  border: thin groove #aa8c2c;
+  border: none;
   border-radius: var(--app-border-rad);
   display: grid;
   object-fit: cover;
@@ -408,8 +408,7 @@ h6 {
 }
 
 .product:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 8px 16px rgb(200 200 200 / 0.2);
+  filter: brightness(1.2);
 }
 
 .product > img {
@@ -461,7 +460,7 @@ button > i {
 }
 
 button i:hover {
-  transform: scale(1.1);
+  transform: scale(1.075);
 }
 
 @media screen and (max-width: 768px) {
