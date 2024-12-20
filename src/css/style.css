@@ -233,7 +233,13 @@ h1 {
   margin: auto;
   z-index: 200;
   border-radius: 4px;
-  background: var(--app-box-color);
+  background: 
+    linear-gradient(
+      45deg, 
+      rgb(99 167 140 / 0.05) 0%, 
+      rgb(120 180 255 / 0.1) 50%, 
+      rgb(99 167 140 / 0.05) 100%); 
+  backdrop-filter: blur(40px) brightness(0.3);
   transition: all 0.25s ease-in-out;
 }
 
@@ -427,8 +433,12 @@ a .product:first-of-type {
   height: 28rem;
   width: calc(25% - 20px);
   padding-top: 20px;
-  background: linear-gradient(45deg, rgba(61,61,61,1) 0%, rgba(23,73,73,1) 100%); 
-  backdrop-filter: saturate(180%) blur(50px);
+  background: 
+    linear-gradient(
+      45deg, 
+      rgb(99 167 140 / 0.05) 0%, 
+      rgb(120 180 255 / 0.1) 50%, 
+      rgb(99 167 140 / 0.05) 100%); 
   border: none;
   border-radius: var(--app-border-rad);
   display: grid;
@@ -536,7 +546,12 @@ button i:hover {
 }
 
 .tier {
-  background: linear-gradient(45deg, rgba(61,61,61,1) 0%, rgba(23,73,73,1) 100%); 
+  background: 
+    linear-gradient(
+      45deg, 
+      rgb(99 167 140 / 0.05) 0%, 
+      rgb(120 180 255 / 0.1) 50%, 
+      rgb(99 167 140 / 0.05) 100%); 
   border-radius: var(--app-border-rad);
   padding: 24px; 
   width: 380px;
